@@ -1,0 +1,55 @@
+.wrap{
+	margin:80px;
+	padding: 10px;
+	text-align : center;
+}
+.left{
+	float : left;
+}
+.right{
+	float : right;
+}
+.profile{
+	width:200px;
+}
+.blue-back{
+	background-color: skyblue;
+}
+.gray-back{
+	background-color: lightgrey;
+}
+.right-green-color{
+	color: #3c763d;
+}
+.blue-color{
+	color : midnightblue;
+}
+.h1 {
+	font-size:3em;
+	font-weight: bold;
+}
+
+.align-bottom{
+	line-height:3em;
+}
+
+.h2{
+	font-size:2em;
+	line-height:2em;
+}
+.bold{
+	font-weight: bold;
+}
+.table>tbody>tr>.vertical-align{
+	vertical-align: middle;
+}
+.under-line{
+	text-decoration: underline;
+}
+.width-100{
+	width:100%;
+}
+.table> tbody>tr>td{
+	padding:8px;
+	vertical-align: middle;
+}

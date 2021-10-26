@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prac2 using internal CSS</title>
+	<style type="text/css">
+		.wrap{
+			margin:80px;
+			padding: 10px;
+			text-align : center;
+		}
+		.left{
+			float : left;
+		}
+		.right{
+			float : right;
+		}
+		.profile{
+			width:200px;
+		}
+		.blue-back{
+			background-color: skyblue;
+		}
+		.gray-back{
+			background-color: lightgrey;
+		}
+		.right-green-color{
+			color: #3c763d;
+		}
+		.blue-color{
+			color : midnightblue;
+		}
+		.h1 {
+			font-size:3em;
+			font-weight: bold;
+		}
+
+		.align-bottom{
+			line-height:3em;
+		}
+
+		.h2{
+			font-size:2em;
+			line-height:2em;
+		}
+		.bold{
+			font-weight: bold;
+		}
+		.table>tbody>tr>.vertical-align{
+			vertical-align: middle;
+		}
+		.under-line{
+			text-decoration: underline;
+		}
+		.width-100{
+			width:100%;
+		}
+		.table-bordered{
+			border: 1px solid #ddd;
+		}
+		.table{
+			width:100%;
+			max-width: 100%;
+			margin-bottom: 20px;
+			background-color: transparent;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+		.table-bordered>tbody>tr>td{
+			border: 1px solid #ddd;
+		}
+		.table> tbody>tr>td{
+			padding:8px;
+			vertical-align: middle;
+		}
+		.col-md-2{
+			width:16.66666667%;	
+		}
+		.col-md-1{
+			width:8.33333333%;
+		}
+		.col-md-9{
+			width:75%;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap table-bordered">
+		<div id = "header">
+			<span class="left h1 blue-color">Resume</span>
+			<span class="right h2 right-green-color under-line">emergency call: 010-1234-5678</span>
+		</div>
+		<div>			
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td rowspan="5" class="profile"><img class="width-100" src="img/profile.jpg" alt="profile image"></td>
+						<td class="col-md-2 blue-back">name</td>
+						<td colspan="3">Kwangmin Park</td>
+					</tr>
+					<tr>
+						<td class="blue-back">E - mail</td>
+						<td colspan="3">96bgm@korea.ac.kr</td>
+					</tr>
+					<tr>
+						<td class="blue-back">homepage</td>
+						<td colspan="3">github.com/kwangmin-park</td>
+					</tr>
+					<tr>
+						<td class="blue-back blue-back">telephone number</td>
+						<td>010-1234-5678</td>
+						<td class="col-md-2 blue-back">mobile</td>
+						<td>010-1234-5678</td>
+					</tr>
+					<tr>
+						<td class="blue-back">home address</td>
+						<td colspan="3">Souel, Souel, Souel</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div>
+			<div>
+				<span class="left h2 bold">1. biographical information</span>
+			</div>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td class="col-md-2 blue-back">final academic clique</td>
+						<td>graduated from a college</td>
+						<td class="col-md-2 blue-back">marital status</td>
+						<td>Single</td>
+						<td class="col-md-2 blue-back">religion</td>
+						<td>Buddhism</td>
+					</tr>
+					<tr>
+						<td class="blue-back">height</td>
+						<td>177cm</td>
+						<td class="blue-back">weight</td>
+						<td>63kg</td>
+						<td class="blue-back">blood type</td>
+						<td>AB type</td>
+					</tr>
+					<tr>
+						<td class="blue-back">visual acuity</td>
+						<td>0.1 / 0.1</td>
+						<td class="blue-back">hobby</td>
+						<td>Cycling</td>
+						<td class="blue-back">special ability</td>
+						<td>Swimming</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div>
+			<div>
+				<span class="left h2 bold">2. academic clique details</span>
+			</div>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td class="col-md-2 blue-back">year/month</td>
+						<td class="col-md-5 blue-back">school name</td>
+						<td class="col-md-5 blue-back">major</td>
+					</tr>
+					<tr>
+						<td>2012.03 ~ 2015.02</td>
+						<td>SUNRIN Internet high school, Seoul</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2015.03 ~ 2022.02</td>
+						<td>KOREA Univ, Seoul</td>
+						<td>Electrical and electronic engineering</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div>
+			<div>
+				<span class="left h2 bold">3. family details</span>
+			</div>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td class="col-md-1 blue-back">num</td>
+						<td class="col-md-1 blue-back">relation</td>
+						<td class="col-md-2 blue-back">name</td>
+						<td class="col-md-1 blue-back">age</td>
+						<td class="col-md-3 blue-back">final academic clique</td>
+						<td class="col-md-3 blue-back">career</td>
+						<td class="col-md-1 blue-back">cohabitation situation</td>
+					</tr>
+					<tr>
+						<td class="gray-back">1</td>
+						<td>Father</td>
+						<td>Fafafa</td>
+						<td>70</td>
+						<td>graduated from a college</td>
+						<td>owner of an independent enterprise</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<td class="gray-back">2</td>
+						<td>Mother</td>
+						<td>Mamama</td>
+						<td>65</td>
+						<td>graduated from a college</td>
+						<td>house wife</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<td class="gray-back">3</td>
+						<td>Brother</td>
+						<td>Bro</td>
+						<td>44</td>
+						<td>graduated from a college</td>
+						<td>a company employee</td>
+						<td>no</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div>
+			<div>
+				<span class="left h2 bold">4. career details</span>
+			</div>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td class="col-md-1 blue-back">num</td>
+						<td class="col-md-2 blue-back">term</td>
+						<td class="col-md-9 blue-back"></td>
+					</tr>
+					<tr>
+						<td class="gray-back">1</td>
+						<td>2015.08 ~ 2016.07</td>
+						<td>Samsung SDS internship sGen ICT Club</td>
+					</tr>
+					<tr>
+						<td class="gray-back">2</td>
+						<td>2017.02 ~ 2019.07</td>
+						<td>Nexol System</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div>
+			<div>
+				<span class="left h2 bold">5. certificate of qualifications</span>
+			</div>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<td class="col-md-1 blue-back">foreign language & certificate</td>
+						<td class="col-md-2 vertical-align">OPIC</td>
+						<td class="col-md-9 vertical-align">IH</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</body>
+</html>
