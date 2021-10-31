@@ -151,6 +151,15 @@ nav .content .links{
   top: 0;
 }
 
+
+.fa-bars:before{
+  content:"";
+  display: inline-block;
+  background-image: url("../resource/icon/menu.png");
+  background-size:30px 30px;
+  width:30px;
+  height:30px; 
+}
 body{  
   background-size: 100% 621px;
   margin-bottom: 20px;
@@ -181,12 +190,17 @@ body{
     display: block;
   }
   .wrapper #show-menu:checked ~ .menu-icon i::before{
-    content: "\f00d";
+    content:"";
+    display: inline-block;
+    background-image: url("../resource/icon/close.png");
+    background-size:30px 30px;
+    width:30px;
+    height:30px; 
   }
   nav .content .links{
     display: block;
     position: fixed;
-    background: #14181f;
+    background: #14181f;    
     height: 100%;
     width: 100%;
     top: 70px;
@@ -197,6 +211,16 @@ body{
     padding-bottom: 100px;
     transition: all 0.3s ease;
   }
+  nav .content .links li a{
+    color:#fff;
+  }
+
+  .content .links li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    max-height: initial;
+  }
+
   nav #show-menu:checked ~ .content .links{
     left: 0%;
   }
@@ -210,9 +234,6 @@ body{
     display: block;
     padding: 8px 18px;
     cursor: pointer;
-  }
-  .content .links li a.desktop-link{
-    display: none;
   }
 
   /* dropdown responsive code start */
