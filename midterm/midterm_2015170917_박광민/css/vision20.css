@@ -1,0 +1,8 @@
+#vision20-text > div > img{
+	width: 100%
+}
+
+#vision20-text > div{
+	max-width: 1000px;
+	margin: 0 auto;
+}
