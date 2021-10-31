@@ -1,0 +1,17 @@
+.body-background{
+  background: #f4f4f4 url('http://www.korea.ac.kr/mbshome/mbs/university/images/main3/visualBg.jpg') no-repeat;
+}
+
+.v-image{
+  display: inline-block;
+  height: auto;
+  background-color:#fff;
+}
+
+#v-image1>a>span{
+  color:#b47320;
+}
+
+
+
+
