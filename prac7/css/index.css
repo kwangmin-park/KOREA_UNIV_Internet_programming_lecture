@@ -1,0 +1,21 @@
+#equation-td, #answer-td{
+	height: 3rem;
+	font-size:2rem;
+	/*width: 100%;
+	margin: 0 auto;*/
+}
+
+#answer-td{
+	text-align: right;
+	font-weight: bold;	
+}
+
+.table > tbody > tr > td {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.table > tbody > tr > td:hover{
+	cursor: pointer;
+}
